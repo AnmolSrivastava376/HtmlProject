@@ -16,7 +16,7 @@ body{
 .loginbox{
     position: relative;
     width: 80vw;
-    height: 70vh;
+    height: 60vh;
     background-color: rgb(245, 227, 195);
     display: flex;
 }
@@ -36,6 +36,7 @@ body{
     color: white;
     font-size: 80px;
     transform: translateX(-10%);
+    transition: all 1s linear;
 }
 .contentbox{
     width: 100%;
@@ -48,9 +49,11 @@ body{
 }
 .heading{
     font-size: 32px;
+    margin: 10px 0;
 }
 .smallbox{
     width: 100%;
+    padding: 20px 0;
     background-color: rgb(245, 227, 195);
     display: flex;
     flex-direction: column;
@@ -61,14 +64,27 @@ body{
 .inp{
     width: 80%;
     height: 40px;
-    padding: 0 0 0 6px;
+    padding: 0 0 0 12px;
     font-size: 16px;
-    border-radius: 4px;
+    border-radius: 20px;
+    background-color: #9d1f8215;
+    border: 2px solid rgba(37,17,80,255);
 }
 .button{
-    background-color: #9d1f82;
+    background-image: linear-gradient(to bottom right, #d440b7,#320e80 );
     padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 300;
     cursor: pointer;
+    color: white;
+}
+.button:hover{
+    background-image: linear-gradient(to bottom right, #320e80, #d440b7 );
+}
+.line{
+    width: 80%;
+    height: 1px;
+    background-color: gray;
 }
 
 @media (max-width: 900px) {
@@ -78,7 +94,7 @@ body{
         height: fit-content;
     }
     .imagebox{
-        clip-path: none;
+        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
     }
     .imagebox>p{
         transform: translateX(0px);
