@@ -120,7 +120,7 @@ p.webdev{
     
 }
 .imgbox{
-    background-image: url('https://img.pikbest.com/ai/illus_our/20230421/f809cd3ba9ef82fbe85cdfde6cf7cfc6.jpg!sw800');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0GzwmpNJTP49ZO11Z-rYyHS-qtBU0A-Q0nA&usqp=CAU');
         background-position: center;
         background-size: 100% 100%;
     position: absolute;
@@ -130,14 +130,44 @@ p.webdev{
     right: -40px;
 }
 .smalltitle{
+    position: relative;
     color: #f4901c;
     font-size: 32px;
     font-weight: 500;
+}
+.smalltitle::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #f4901c;
 }
 .infoo{
     font-size: 40px;
     line-height: 46px;
     padding: 10px 0;
+}
+.cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contactinfo{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    height: 20px;
+    width: auto;
+    gap: 10px;
+    align-items: center;
+}
+.icon{
+    width: 24px;
+    height: 20px;
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 2px;
 }
 @media (max-width: 800px){
     .container{
@@ -184,5 +214,8 @@ p.webdev{
         background-image: url('https://img.pikbest.com/ai/illus_our/20230421/f809cd3ba9ef82fbe85cdfde6cf7cfc6.jpg!sw800');
         background-position: center;
         background-size: 100% 100%;
+    }
+    .rightbox{
+        display: none;
     }
 }
