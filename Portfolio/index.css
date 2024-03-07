@@ -113,14 +113,31 @@ p.webdev{
     flex-direction: column;
 }
 .rightbox{
+    position: relative;
     width: 100%;
     height: 100%;
     flex: 1;
-    background-color: #f8880e;
+    
+}
+.imgbox{
+    background-image: url('https://img.pikbest.com/ai/illus_our/20230421/f809cd3ba9ef82fbe85cdfde6cf7cfc6.jpg!sw800');
+        background-position: center;
+        background-size: 100% 100%;
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    top: -30px;
+    right: -40px;
 }
 .smalltitle{
     color: #f4901c;
     font-size: 32px;
+    font-weight: 500;
+}
+.infoo{
+    font-size: 40px;
+    line-height: 46px;
+    padding: 10px 0;
 }
 @media (max-width: 800px){
     .container{
@@ -148,12 +165,24 @@ p.webdev{
     }
     p.webdev{
         font-size: 60px;
+        margin-bottom: 10px;
     }
     
     .photo{
         display: none;
     }
+    .imgbox{
+        display: none;
+    }
     .leftbox{
         height: fit-content;
+    }
+    .rightbox{
+        margin-top: 20px;
+        min-height: 200px;
+        min-width: auto;
+        background-image: url('https://img.pikbest.com/ai/illus_our/20230421/f809cd3ba9ef82fbe85cdfde6cf7cfc6.jpg!sw800');
+        background-position: center;
+        background-size: 100% 100%;
     }
 }
